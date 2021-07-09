@@ -35,10 +35,10 @@ function App() {
           </Fragment>}
       <div className="titleContainer">
         <h3 className="listTitle">My List: </h3>
-        {myList.map((list) => {
+        {myList.map((movie) => {
           return (
             <Fragment>
-              <p className="showTitle">{list.title}</p>
+              <p className="showTitle">{movie.title}</p>
             </Fragment>
             
           )
