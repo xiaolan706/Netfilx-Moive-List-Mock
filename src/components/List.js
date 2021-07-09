@@ -7,10 +7,10 @@ const List = ({className, section, data, buttonName, toggleButton}) => {
         <div>
             <h2 className="section">{section}</h2>
             <div className={className}>
-                {data.map((list) => {
+                {data.map((movie) => {
                     return (
-                        <Movie key={list.id} img={list.img} title={list.title}>
-                            <button onClick={() => toggleButton(list)}>{buttonName}</button>
+                        <Movie key={movie.id} img={movie.img} title={movie.title}>
+                            <button onClick={() => toggleButton(movie)}>{buttonName}</button>
                         </Movie>    
                     )
                 })}
