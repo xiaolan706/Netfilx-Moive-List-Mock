@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" >
       <img className="logo" src={logo} alt="logo"></img>
       {loading ? <div className="loading">Loading...</div> : 
           <Fragment>
@@ -36,11 +36,8 @@ function App() {
       <div className="titleContainer">
         <h3 className="listTitle">My List: </h3>
         {myList.map((movie) => {
-          return (
-            <Fragment>
-              <p className="showTitle">{movie.title}</p>
-            </Fragment>
-            
+          return (           
+              <p className="showTitle" key={movie.id}>{movie.title}</p>
           )
         })}
       </div>
